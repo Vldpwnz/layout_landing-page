@@ -1,6 +1,7 @@
 /* #region page */
 
 .page {
+  /* stylelint-disable-next-line font-family-name-quotes */
   font-family: 'Popping', sans-serif;
   color: #FFF;
   font-size: 16px;
