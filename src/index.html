@@ -4,8 +4,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>MyBike</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon"
+      type="image/x-icon"
+      href="./icons/favicon.png"
+    >
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
@@ -13,22 +17,22 @@
     >
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.scss" />
     <script src="scripts/main.js" defer></script>
   </head>
 
   <body class="page__body">
     <header class="header">
-      <div class="header__top">
+      <div class="top-bar">
         <a href="#">
           <img
-            class="logo"
+            class="top-bar__logo"
             src="images/logo.png"
             alt="MyBike logo"
           >
         </a>
-        <div class="heder__icons">
-          <a href="#" class="icon icon--phone"></a>
+        <div class="top-bar__icons">
+          <a href="tel:+1 234 5555-55-55" class="icon icon--phone"></a>
           <a href="#menu" class="icon icon--menu"></a>
         </div>
       </div>
@@ -39,20 +43,20 @@
 
     <aside class="menu page__menu" id="menu">
       <!-- menu__content is a wrapper that can be used to set position, it's separated to not breaking menu block in case of reusability -->
-      <div class="menu__content">
-        <div class="menu__top">
-          <a href="#">
-            <img
-              class="logo"
-              src="images/logo-black.png"
-              alt="MyBike logo"
-            >
-          </a>
-          <div class="heder__icons">
-            <a href="#" class="icon icon--close"></a>
-          </div>
+      <div class="top-bar menu__top">
+        <a href="#">
+          <img
+            class="top-bar__logo"
+            src="images/logo-black.png"
+            alt="MyBike logo"
+          >
+        </a>
+        <div class="heder__icons">
+          <a href="#" class="icon icon--close"></a>
         </div>
-        <!-- added element to nav in order to add external margin (not allowed to add margins to blocks) -->
+      </div>
+      <!-- added element to nav in order to add external margin (not allowed to add margins to blocks) -->
+      <div class="menu__content">
         <nav class="nav menu__nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -77,7 +81,7 @@
           +1 234 5555-55-55
         </a>
 
-        <a href="tel:+1 234 5555-55-55" class="menu_book-a-test-ride">
+        <a href="tel:+1 234 5555-55-55" class="menu__book-a-test-ride">
           Book a test ride
         </a>
       </div>

@@ -1,0 +1,21 @@
+.top-bar {
+  padding: 24px 20px;
+  @include contentPaddingInline;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @mixin onTablet {
+    padding-block: 36px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* done to have parent div the same height */
+  &__logo {
+    display: flex;
+  }
+}
