@@ -1,0 +1,16 @@
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 18px 0;
+  border: none;
+  border-radius: 40px;
+
+  &:hover {
+    box-shadow: #E8E8F066 1px 4px 16px 0;
+  }
+
+  &:active {
+    box-shadow: #E8E8F0A3 1px 4px 16px 0;
+  }
+}

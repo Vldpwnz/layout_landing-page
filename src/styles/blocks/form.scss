@@ -1,0 +1,20 @@
+.form {
+  @include pageGrid;
+
+  &__control {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+    }
+  }
+}
+
+.input {
+  border-radius: 40px;
+  height: 48px;
+}
