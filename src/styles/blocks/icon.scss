@@ -11,7 +11,7 @@
   }
 
   &--phone {
-    background-image: url(../icons/icon-phone.png);
+    background-image: url(../icons/icon-phone.svg);
     position: relative;
 
     &::after {
@@ -44,6 +44,6 @@
   }
 
   &--close {
-    background-image: url(../icons/icon-close.png);
+    background-image: url(../icons/icon-close.svg);
   }
 }

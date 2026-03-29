@@ -13,6 +13,12 @@ select {
   font-family: inherit;
 }
 
+input:-webkit-autofill {
+  -webkit-text-fill-color: #eaeaea;
+  box-shadow: 0 0 0px 1000px #1a1a1a inset;
+  border: 1px solid #333;
+}
+
 a {
   color: inherit;
   text-decoration: none;
